@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_313ce7c51d1cf7980a89fa5e7942ef34 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_313ce7c51d1cf7980a89fa5e7942ef34" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_313ce7c51d1cf7980a89fa5e7942ef34 = L.map(
+                "map_313ce7c51d1cf7980a89fa5e7942ef34",
+                {
+                    center: [48.3676555, 10.8953425],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+
+            
+
+        
+    
+            var tile_layer_e778ed5f461438b9117360fc018844ba = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e778ed5f461438b9117360fc018844ba.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+            map_313ce7c51d1cf7980a89fa5e7942ef34.fitBounds(
+                [[48.364379, 10.889793], [48.370932, 10.900892]],
+                {}
+            );
+        
+    
+        function geo_json_5f1c0cb5841cdd80c99ac47e094cd598_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "red", "fillColor": "red", "fillOpacity": 0.5, "weight": 2};
+            }
+        }
+        function geo_json_5f1c0cb5841cdd80c99ac47e094cd598_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_5f1c0cb5841cdd80c99ac47e094cd598_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3};
+            
+            let style = geo_json_5f1c0cb5841cdd80c99ac47e094cd598_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_5f1c0cb5841cdd80c99ac47e094cd598_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                            geo_json_5f1c0cb5841cdd80c99ac47e094cd598.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_5f1c0cb5841cdd80c99ac47e094cd598_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_5f1c0cb5841cdd80c99ac47e094cd598 = L.geoJson(null, {
+                onEachFeature: geo_json_5f1c0cb5841cdd80c99ac47e094cd598_onEachFeature,
+            
+                style: geo_json_5f1c0cb5841cdd80c99ac47e094cd598_styler,
+                pointToLayer: geo_json_5f1c0cb5841cdd80c99ac47e094cd598_pointToLayer,
+        });
+
+        function geo_json_5f1c0cb5841cdd80c99ac47e094cd598_add (data) {
+            geo_json_5f1c0cb5841cdd80c99ac47e094cd598
+                .addData(data);
+        }
+            geo_json_5f1c0cb5841cdd80c99ac47e094cd598_add({"bbox": [10.889793, 48.364379, 10.900892, 48.370932], "features": [{"bbox": [10.898697, 48.366804, 10.898697, 48.366804], "geometry": {"coordinates": [10.898697, 48.366804], "type": "Point"}, "id": "0", "properties": {"Category": "Religion", "Description": "Behold the mighty Augsburg Cathedral, where ancient stones whisper secrets of yore. Its Gothic grandeur stands as a testament to the faith of centuries past. Herein lies the spirit of the city, preserved in sacred walls. A marvel for the eyes and soul, truly a sight to behold.", "Latitude": 48.366804, "Longitude": 10.898697, "Name": "Augsburg Cathedral", "Rating": 10, "__folium_color": "red", "id": 1}, "type": "Feature"}, {"bbox": [10.897685, 48.370932, 10.897685, 48.370932], "geometry": {"coordinates": [10.897685, 48.370932], "type": "Point"}, "id": "1", "properties": {"Category": "Historic", "Description": "Enter the Fuggerei, a humble abode for the poor, founded by the great Jakob Fugger himself. Within these ancient walls, the spirit of charity doth dwell. Marvel at the simplicity and grace of this centuries-old refuge. A place where history and compassion intertwine.", "Latitude": 48.370932, "Longitude": 10.897685, "Name": "Fuggerei", "Rating": 9, "__folium_color": "red", "id": 2}, "type": "Feature"}, {"bbox": [10.897347, 48.370137, 10.897347, 48.370137], "geometry": {"coordinates": [10.897347, 48.370137], "type": "Point"}, "id": "2", "properties": {"Category": "Historic", "Description": "Gaze upon the grand Augsburg Town Hall, a beacon of Renaissance splendor. Its gilded halls tell tales of civic pride and power. Here, the rulers of old didst gather, and the Golden Hall still gleams with untold riches. A noble edifice that commands respect and admiration.", "Latitude": 48.370137, "Longitude": 10.897347, "Name": "Town Hall (Rathaus)", "Rating": 8, "__folium_color": "red", "id": 3}, "type": "Feature"}, {"bbox": [10.899258, 48.368654, 10.899258, 48.368654], "geometry": {"coordinates": [10.899258, 48.368654], "type": "Point"}, "id": "3", "properties": {"Category": "Historic", "Description": "Ascend the lofty Perlach Tower, where the winds of time doth blow. From its heights, the city of Augsburg spreads like a tapestry before thine eyes. A place for reflection and contemplation, far from the clamor below. Stand here, and feel the pulse of history.", "Latitude": 48.368654, "Longitude": 10.899258, "Name": "Perlach Tower", "Rating": 7, "__folium_color": "red", "id": 4}, "type": "Feature"}, {"bbox": [10.894691, 48.368033, 10.894691, 48.368033], "geometry": {"coordinates": [10.894691, 48.368033], "type": "Point"}, "id": "4", "properties": {"Category": "Religion", "Description": "In St. Anne\u0027s Church, the echoes of faith resound through the ages. Its halls, adorned with sacred art, offer solace to weary souls. Here, Martin Luther once found refuge, and the walls still whisper his name. A haven of peace amidst the trials of the world.", "Latitude": 48.368033, "Longitude": 10.894691, "Name": "St. Anne\u0027s Church", "Rating": 8, "__folium_color": "red", "id": 5}, "type": "Feature"}, {"bbox": [10.895154, 48.366021, 10.895154, 48.366021], "geometry": {"coordinates": [10.895154, 48.366021], "type": "Point"}, "id": "5", "properties": {"Category": "Historic", "Description": "Tread upon the cobbles of Maximilianstra\u00dfe, a street where history and commerce converge. Lined with noble houses and ancient inns, it hath seen both joy and strife. Here, the pulse of Augsburg doth beat, with tales of wealth and woe. A path where footsteps of the past linger still.", "Latitude": 48.366021, "Longitude": 10.895154, "Name": "Maximilianstra\u00dfe", "Rating": 6, "__folium_color": "red", "id": 6}, "type": "Feature"}, {"bbox": [10.900892, 48.364681, 10.900892, 48.364681], "geometry": {"coordinates": [10.900892, 48.364681], "type": "Point"}, "id": "6", "properties": {"Category": "Religion", "Description": "Within the sacred halls of the Basilica, saints and martyrs doth slumber in eternal peace. This place of pilgrimage hath seen the faithful from far and wide. Its twin towers rise to the heavens, a beacon for the devout. A place where the divine doth meet the mortal.", "Latitude": 48.364681, "Longitude": 10.900892, "Name": "Basilica of St. Ulrich and Afra", "Rating": 7, "__folium_color": "red", "id": 7}, "type": "Feature"}, {"bbox": [10.889793, 48.370391, 10.889793, 48.370391], "geometry": {"coordinates": [10.889793, 48.370391], "type": "Point"}, "id": "7", "properties": {"Category": "Historic", "Description": "Behold the Weberhaus, a dwelling of merchants and craftsmen from days of old. Its painted fa\u00e7ade speaks of the wealth and industry that once flowed through these streets. A relic of the city\u0027s prosperous past, preserved for posterity. A glimpse into the life of Augsburg\u0027s humble folk.", "Latitude": 48.370391, "Longitude": 10.889793, "Name": "Weberhaus", "Rating": 5, "__folium_color": "red", "id": 8}, "type": "Feature"}, {"bbox": [10.896777, 48.364379, 10.896777, 48.364379], "geometry": {"coordinates": [10.896777, 48.364379], "type": "Point"}, "id": "8", "properties": {"Category": "Historic", "Description": "Step into the opulence of Schaezlerpalais, where art and luxury doth reign supreme. Its gilded halls and grand ballrooms tell tales of aristocracy and splendor. A haven for lovers of fine art and architecture. Here, the spirit of the Baroque lives on, undimmed by the passage of time.", "Latitude": 48.364379, "Longitude": 10.896777, "Name": "Schaezlerpalais", "Rating": 6, "__folium_color": "red", "id": 9}, "type": "Feature"}, {"bbox": [10.890715, 48.370701, 10.890715, 48.370701], "geometry": {"coordinates": [10.890715, 48.370701], "type": "Point"}, "id": "9", "properties": {"Category": "Historic", "Description": "In this house of marvels, the strings of fate doth dance. Here, puppets come to life, telling tales both wondrous and strange. A place of whimsy and delight, where the young and old find joy alike. Step within, and be enchanted by the magic of the stage.", "Latitude": 48.370701, "Longitude": 10.890715, "Name": "The Augsburg Puppet Theatre", "Rating": 4, "__folium_color": "red", "id": 10}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_5f1c0cb5841cdd80c99ac47e094cd598.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["id", "Latitude", "Longitude", "Rating", "Name", "Description", "Category"];
+    let aliases = ["id", "Latitude", "Longitude", "Rating", "Name", "Description", "Category"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_5f1c0cb5841cdd80c99ac47e094cd598.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+        function geo_json_f00ef5c85fec0963086a1ce9f11a5a7e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "blue", "fillColor": "blue", "fillOpacity": 0.5, "weight": 2};
+            }
+        }
+        function geo_json_f00ef5c85fec0963086a1ce9f11a5a7e_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_f00ef5c85fec0963086a1ce9f11a5a7e_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_f00ef5c85fec0963086a1ce9f11a5a7e_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_f00ef5c85fec0963086a1ce9f11a5a7e_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                            geo_json_f00ef5c85fec0963086a1ce9f11a5a7e.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_f00ef5c85fec0963086a1ce9f11a5a7e_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_f00ef5c85fec0963086a1ce9f11a5a7e = L.geoJson(null, {
+                onEachFeature: geo_json_f00ef5c85fec0963086a1ce9f11a5a7e_onEachFeature,
+            
+                style: geo_json_f00ef5c85fec0963086a1ce9f11a5a7e_styler,
+                pointToLayer: geo_json_f00ef5c85fec0963086a1ce9f11a5a7e_pointToLayer,
+        });
+
+        function geo_json_f00ef5c85fec0963086a1ce9f11a5a7e_add (data) {
+            geo_json_f00ef5c85fec0963086a1ce9f11a5a7e
+                .addData(data);
+        }
+            geo_json_f00ef5c85fec0963086a1ce9f11a5a7e_add({"bbox": [10.895154, 48.36498195, 10.9038222, 48.37272715], "features": [{"bbox": [10.896537957154015, 48.366804, 10.898697, 48.37272715], "geometry": {"coordinates": [[10.898697, 48.366804], [10.896537957154015, 48.37272715]], "type": "LineString"}, "id": "0", "properties": {"__folium_color": "blue", "distance": 677.6799920313057, "id": 0}, "type": "Feature"}, {"bbox": [10.897685, 48.3695722, 10.9038222, 48.370932], "geometry": {"coordinates": [[10.897685, 48.370932], [10.9038222, 48.3695722]], "type": "LineString"}, "id": "1", "properties": {"__folium_color": "blue", "distance": 479.1108936301999, "id": 1}, "type": "Feature"}, {"bbox": [10.897347, 48.3687447, 10.898679098607428, 48.370137], "geometry": {"coordinates": [[10.897347, 48.370137], [10.898679098607428, 48.3687447]], "type": "LineString"}, "id": "2", "properties": {"__folium_color": "blue", "distance": 183.5748417370593, "id": 2}, "type": "Feature"}, {"bbox": [10.895154, 48.36498195, 10.898342679748993, 48.366021], "geometry": {"coordinates": [[10.895154, 48.366021], [10.898342679748993, 48.36498195]], "type": "LineString"}, "id": "3", "properties": {"__folium_color": "blue", "distance": 334.52999831948824, "id": 5}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_f00ef5c85fec0963086a1ce9f11a5a7e.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["id", "distance"];
+    let aliases = ["id", "distance"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_f00ef5c85fec0963086a1ce9f11a5a7e.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+        function geo_json_13b1c0dbb7b77104c48a4709727aad75_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "green", "fillColor": "green", "fillOpacity": 0.5, "weight": 2};
+            }
+        }
+        function geo_json_13b1c0dbb7b77104c48a4709727aad75_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_13b1c0dbb7b77104c48a4709727aad75_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3};
+            
+            let style = geo_json_13b1c0dbb7b77104c48a4709727aad75_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_13b1c0dbb7b77104c48a4709727aad75_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                            geo_json_13b1c0dbb7b77104c48a4709727aad75.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_13b1c0dbb7b77104c48a4709727aad75_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_13b1c0dbb7b77104c48a4709727aad75 = L.geoJson(null, {
+                onEachFeature: geo_json_13b1c0dbb7b77104c48a4709727aad75_onEachFeature,
+            
+                style: geo_json_13b1c0dbb7b77104c48a4709727aad75_styler,
+                pointToLayer: geo_json_13b1c0dbb7b77104c48a4709727aad75_pointToLayer,
+        });
+
+        function geo_json_13b1c0dbb7b77104c48a4709727aad75_add (data) {
+            geo_json_13b1c0dbb7b77104c48a4709727aad75
+                .addData(data);
+        }
+            geo_json_13b1c0dbb7b77104c48a4709727aad75_add({"bbox": [10.896537957154015, 48.36498195, 10.9038222, 48.37272715], "features": [{"bbox": [10.896537957154015, 48.37272715, 10.896537957154015, 48.37272715], "geometry": {"coordinates": [10.896537957154015, 48.37272715], "type": "Point"}, "id": "0", "properties": {"Name": "Germany, Augsburg, Augsburg Cathedral", "__folium_color": "green", "distance": 677.6799920313057, "id": 0}, "type": "Feature"}, {"bbox": [10.9038222, 48.3695722, 10.9038222, 48.3695722], "geometry": {"coordinates": [10.9038222, 48.3695722], "type": "Point"}, "id": "1", "properties": {"Name": "Germany, Augsburg, Fuggerei", "__folium_color": "green", "distance": 479.1108936301999, "id": 1}, "type": "Feature"}, {"bbox": [10.898679098607428, 48.3687447, 10.898679098607428, 48.3687447], "geometry": {"coordinates": [10.898679098607428, 48.3687447], "type": "Point"}, "id": "2", "properties": {"Name": "Germany, Augsburg, Town Hall (Rathaus)", "__folium_color": "green", "distance": 183.5748417370593, "id": 2}, "type": "Feature"}, {"bbox": [10.8994258, 48.3650459, 10.8994258, 48.3650459], "geometry": {"coordinates": [10.8994258, 48.3650459], "type": "Point"}, "id": "3", "properties": {"Name": "Germany, Augsburg, Maximilianstra\u00dfe", "__folium_color": "green", "distance": 334.52999831948824, "id": 5}, "type": "Feature"}, {"bbox": [10.897939932588875, 48.3673811, 10.897939932588875, 48.3673811], "geometry": {"coordinates": [10.897939932588875, 48.3673811], "type": "Point"}, "id": "4", "properties": {"Name": "Germany, Augsburg, Weberhaus", "__folium_color": "green", "distance": 690.0920420130794, "id": 7}, "type": "Feature"}, {"bbox": [10.898342679748993, 48.36498195, 10.898342679748993, 48.36498195], "geometry": {"coordinates": [10.898342679748993, 48.36498195], "type": "Point"}, "id": "5", "properties": {"Name": "Germany, Augsburg, Schaezlerpalais", "__folium_color": "green", "distance": 133.97288407338968, "id": 8}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_13b1c0dbb7b77104c48a4709727aad75.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["id", "Name", "distance"];
+    let aliases = ["id", "Name", "distance"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_13b1c0dbb7b77104c48a4709727aad75.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+            var tile_layer_cb94519d6654bb05ea04a5a1fe190989 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            var layer_control_be1cf93cdd232527b21ef5aa5ddb9328_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e778ed5f461438b9117360fc018844ba,
+                    "cartodbdarkmatter" : tile_layer_b9cfd8542a0c97641e67c796bd1575ac,
+                },
+                overlays :  {
+                    "LLM Data" : geo_json_beadba1485ab168626840db0e20291f6,
+                    "Distances" : geo_json_e253de2b6384da3e404f950966fd33e0,
+                    "Reference Points" : geo_json_cd42b1462a212252c2d29acf08cf7d5e,
+                },
+            };
+            let layer_control_be1cf93cdd232527b21ef5aa5ddb9328 = L.control.layers(
+                layer_control_be1cf93cdd232527b21ef5aa5ddb9328_layers.base_layers,
+                layer_control_be1cf93cdd232527b21ef5aa5ddb9328_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+
+        
+    
+            tile_layer_e778ed5f461438b9117360fc018844ba.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+            geo_json_5f1c0cb5841cdd80c99ac47e094cd598.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+            geo_json_f00ef5c85fec0963086a1ce9f11a5a7e.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+            geo_json_13b1c0dbb7b77104c48a4709727aad75.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+            tile_layer_e778ed5f461438b9117360fc018844ba.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+            geo_json_5f1c0cb5841cdd80c99ac47e094cd598.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+            geo_json_f00ef5c85fec0963086a1ce9f11a5a7e.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+            geo_json_13b1c0dbb7b77104c48a4709727aad75.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+        function geo_json_beadba1485ab168626840db0e20291f6_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "red", "fillColor": "red", "fillOpacity": 0.5, "weight": 2};
+            }
+        }
+        function geo_json_beadba1485ab168626840db0e20291f6_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_beadba1485ab168626840db0e20291f6_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3};
+            
+            let style = geo_json_beadba1485ab168626840db0e20291f6_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_beadba1485ab168626840db0e20291f6_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                            geo_json_beadba1485ab168626840db0e20291f6.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_beadba1485ab168626840db0e20291f6_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_beadba1485ab168626840db0e20291f6 = L.geoJson(null, {
+                onEachFeature: geo_json_beadba1485ab168626840db0e20291f6_onEachFeature,
+            
+                style: geo_json_beadba1485ab168626840db0e20291f6_styler,
+                pointToLayer: geo_json_beadba1485ab168626840db0e20291f6_pointToLayer,
+        });
+
+        function geo_json_beadba1485ab168626840db0e20291f6_add (data) {
+            geo_json_beadba1485ab168626840db0e20291f6
+                .addData(data);
+        }
+            geo_json_beadba1485ab168626840db0e20291f6_add({"bbox": [-1.5516, 53.7917, -1.5321, 53.8059], "features": [{"bbox": [-1.5492, 53.7997, -1.5492, 53.7997], "geometry": {"coordinates": [-1.5492, 53.7997], "type": "Point"}, "id": "0", "properties": {"Description": "In fair Leeds where we lay our scene, stands Kirkstall Abbey, a ruinous beauty of medieval times. Founded in the 12th century by monks, this abbey boasts of Gothic architecture, echoing tales of piety and splendor. Amidst its crumbling walls, one can ponder upon the whispers of history, weaving tales of devotion and decay.", "Latitude": 53.7997, "Longitude": -1.5492, "Name": "Kirkstall Abbey", "__folium_color": "red", "id": 1}, "type": "Feature"}, {"bbox": [-1.5464, 53.8006, -1.5464, 53.8006], "geometry": {"coordinates": [-1.5464, 53.8006], "type": "Point"}, "id": "1", "properties": {"Description": "Behold Kirkstall Forge, where the clang of hammer on iron once filled the air with industry\u0027s song. Founded in the 12th century, it holds the title of the oldest forge in England, a testament to the city\u0027s industrial heritage. Though its fires have long been extinguished, the echoes of its craftsmanship resound through time, a tribute to Leeds\u0027 industrious spirit.", "Latitude": 53.8006, "Longitude": -1.5464, "Name": "Kirkstall Forge", "__folium_color": "red", "id": 2}, "type": "Feature"}, {"bbox": [-1.5418, 53.7917, -1.5418, 53.7917], "geometry": {"coordinates": [-1.5418, 53.7917], "type": "Point"}, "id": "2", "properties": {"Description": "Enter Thackray Medical Museum, a portal to the past where the wonders and woes of medicine unfold. Housed in a Victorian building, this museum offers a journey through the annals of healthcare, from the crude remedies of yore to the marvels of modern science. Step inside, and let history\u0027s remedies and maladies regale thee in equal measure.", "Latitude": 53.7917, "Longitude": -1.5418, "Name": "Thackray Medical Museum", "__folium_color": "red", "id": 3}, "type": "Feature"}, {"bbox": [-1.5466, 53.8004, -1.5466, 53.8004], "geometry": {"coordinates": [-1.5466, 53.8004], "type": "Point"}, "id": "3", "properties": {"Description": "Venture into Kirkstall Valley Nature Reserve, where nature\u0027s bounty flourishes amidst the urban landscape. Spanning 180 acres, this haven teems with diverse flora and fauna, offering respite from the bustle of city life. Wander its verdant trails, and let the whispers of the wind and the rustle of leaves serenade thee with tales of wilderness.", "Latitude": 53.8004, "Longitude": -1.5466, "Name": "Kirkstall Valley Nature Reserve", "__folium_color": "red", "id": 4}, "type": "Feature"}, {"bbox": [-1.5461, 53.8003, -1.5461, 53.8003], "geometry": {"coordinates": [-1.5461, 53.8003], "type": "Point"}, "id": "4", "properties": {"Description": "Follow the Aire Sculpture Trail, an outdoor gallery where art and nature intertwine in harmonious embrace. Set along the River Aire, this trail showcases a collection of sculptures inspired by the beauty of the natural world. Meander along its path, and let each sculpture\u0027s form and essence speak to thee of the river\u0027s timeless flow and the land\u0027s enduring grace.", "Latitude": 53.8003, "Longitude": -1.5461, "Name": "Aire Sculpture Trail", "__folium_color": "red", "id": 5}, "type": "Feature"}, {"bbox": [-1.5321, 53.7987, -1.5321, 53.7987], "geometry": {"coordinates": [-1.5321, 53.7987], "type": "Point"}, "id": "5", "properties": {"Description": "Behold Leeds City Museum, a treasure trove of artifacts and wonders from epochs long past. Housed in a grand Victorian building, it beckons explorers to delve into the annals of Leeds\u0027 storied history. From ancient relics to modern marvels, its exhibits offer a glimpse into the city\u0027s vibrant tapestry, where each artifact holds a tale untold.", "Latitude": 53.7987, "Longitude": -1.5321, "Name": "Leeds City Museum", "__folium_color": "red", "id": 6}, "type": "Feature"}, {"bbox": [-1.5481, 53.797, -1.5481, 53.797], "geometry": {"coordinates": [-1.5481, 53.797], "type": "Point"}, "id": "6", "properties": {"Description": "Journey to Armley Mills Industrial Museum, where the echoes of Leeds\u0027 industrial legacy resound through time. Housed in a former textile mill, this museum pays homage to the city\u0027s manufacturing prowess. Amidst its historic machinery and interactive exhibits, one can trace the evolution of industry and marvel at the ingenuity of bygone craftsmen.", "Latitude": 53.797, "Longitude": -1.5481, "Name": "Armley Mills Industrial Museum", "__folium_color": "red", "id": 7}, "type": "Feature"}, {"bbox": [-1.5516, 53.7921, -1.5516, 53.7921], "geometry": {"coordinates": [-1.5516, 53.7921], "type": "Point"}, "id": "7", "properties": {"Description": "Enter the Royal Armouries Museum, where the clash of steel and the thunder of battle echo through the halls of history. Housed within a modern fortress, it showcases a formidable collection of arms and armor spanning centuries of warfare. From medieval swords to modern artillery, each artifact tells a tale of conquest and chivalry, inviting visitors to step into the fray of bygone battles.", "Latitude": 53.7921, "Longitude": -1.5516, "Name": "Royal Armouries Museum", "__folium_color": "red", "id": 8}, "type": "Feature"}, {"bbox": [-1.5486, 53.7963, -1.5486, 53.7963], "geometry": {"coordinates": [-1.5486, 53.7963], "type": "Point"}, "id": "8", "properties": {"Description": "Discover Leeds Industrial Museum at Armley Mills, a testament to the city\u0027s industrial prowess. Housed in a historic mill complex, it offers a journey through Leeds\u0027 textile heritage, from spinning wheels to power looms. Amidst the clatter of machinery, one can glimpse the toil and triumph that shaped the city\u0027s industrial landscape.", "Latitude": 53.7963, "Longitude": -1.5486, "Name": "Leeds Industrial Museum at Armley Mills", "__folium_color": "red", "id": 9}, "type": "Feature"}, {"bbox": [-1.5391, 53.8059, -1.5391, 53.8059], "geometry": {"coordinates": [-1.5391, 53.8059], "type": "Point"}, "id": "9", "properties": {"Description": "Enter Roundhay Park, a sprawling expanse of greenery where nature\u0027s splendor unfolds in grandeur. Spanning over 700 acres, it is one of the largest urban parks in Europe, offering respite and recreation to weary souls. Amidst its tranquil lakes and verdant meadows, one can find solace in nature\u0027s embrace, a haven of peace amidst the city\u0027s hustle and bustle.", "Latitude": 53.8059, "Longitude": -1.5391, "Name": "Roundhay Park", "__folium_color": "red", "id": 10}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_beadba1485ab168626840db0e20291f6.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["id", "Latitude", "Longitude", "Name", "Description"];
+    let aliases = ["id", "Latitude", "Longitude", "Name", "Description"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_beadba1485ab168626840db0e20291f6.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+        function geo_json_e253de2b6384da3e404f950966fd33e0_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "blue", "fillColor": "blue", "fillOpacity": 0.5, "weight": 2};
+            }
+        }
+        function geo_json_e253de2b6384da3e404f950966fd33e0_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_e253de2b6384da3e404f950966fd33e0_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 3};
+            
+            let style = geo_json_e253de2b6384da3e404f950966fd33e0_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_e253de2b6384da3e404f950966fd33e0_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                            geo_json_e253de2b6384da3e404f950966fd33e0.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_e253de2b6384da3e404f950966fd33e0_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_e253de2b6384da3e404f950966fd33e0 = L.geoJson(null, {
+                onEachFeature: geo_json_e253de2b6384da3e404f950966fd33e0_onEachFeature,
+            
+                style: geo_json_e253de2b6384da3e404f950966fd33e0_styler,
+                pointToLayer: geo_json_e253de2b6384da3e404f950966fd33e0_pointToLayer,
+        });
+
+        function geo_json_e253de2b6384da3e404f950966fd33e0_add (data) {
+            geo_json_e253de2b6384da3e404f950966fd33e0
+                .addData(data);
+        }
+            geo_json_e253de2b6384da3e404f950966fd33e0_add({"bbox": [-1.627075, 53.7917, -1.5185313611707953, 53.8253007], "features": [{"bbox": [-1.6066842766615848, 53.7997, -1.5492, 53.82065695], "geometry": {"coordinates": [[-1.5492, 53.7997], [-1.6066842766615848, 53.82065695]], "type": "LineString"}, "id": "0", "properties": {"__folium_color": "blue", "distance": 4446.155693758226, "id": 0}, "type": "Feature"}, {"bbox": [-1.627075, 53.8006, -1.5464, 53.8253007], "geometry": {"coordinates": [[-1.5464, 53.8006], [-1.627075, 53.8253007]], "type": "LineString"}, "id": "1", "properties": {"__folium_color": "blue", "distance": 5981.299607544937, "id": 1}, "type": "Feature"}, {"bbox": [-1.5418, 53.7917, -1.5185313611707953, 53.80814875], "geometry": {"coordinates": [[-1.5418, 53.7917], [-1.5185313611707953, 53.80814875]], "type": "LineString"}, "id": "2", "properties": {"__folium_color": "blue", "distance": 2387.2695280932357, "id": 2}, "type": "Feature"}, {"bbox": [-1.599538669342672, 53.8004, -1.5466, 53.8093664], "geometry": {"coordinates": [[-1.5466, 53.8004], [-1.599538669342672, 53.8093664]], "type": "LineString"}, "id": "3", "properties": {"__folium_color": "blue", "distance": 3626.6206801771336, "id": 3}, "type": "Feature"}, {"bbox": [-1.5322629025902677, 53.7918315, -1.5321, 53.7987], "geometry": {"coordinates": [[-1.5321, 53.7987], [-1.5322629025902677, 53.7918315]], "type": "LineString"}, "id": "4", "properties": {"__folium_color": "blue", "distance": 1025.66233938126, "id": 5}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_e253de2b6384da3e404f950966fd33e0.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["id", "distance"];
+    let aliases = ["id", "distance"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_e253de2b6384da3e404f950966fd33e0.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+        function geo_json_cd42b1462a212252c2d29acf08cf7d5e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "green", "fillColor": "green", "fillOpacity": 0.5, "weight": 2};
+            }
+        }
+        function geo_json_cd42b1462a212252c2d29acf08cf7d5e_highlighter(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillOpacity": 0.75};
+            }
+        }
+        function geo_json_cd42b1462a212252c2d29acf08cf7d5e_pointToLayer(feature, latlng) {
+            var opts = {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3};
+            
+            let style = geo_json_cd42b1462a212252c2d29acf08cf7d5e_styler(feature)
+            Object.assign(opts, style)
+            
+            return new L.CircleMarker(latlng, opts)
+        }
+
+        function geo_json_cd42b1462a212252c2d29acf08cf7d5e_onEachFeature(feature, layer) {
+            layer.on({
+                mouseout: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                            geo_json_cd42b1462a212252c2d29acf08cf7d5e.resetStyle(e.target);
+                    }
+                },
+                mouseover: function(e) {
+                    if(typeof e.target.setStyle === "function"){
+                        const highlightStyle = geo_json_cd42b1462a212252c2d29acf08cf7d5e_highlighter(e.target.feature)
+                        e.target.setStyle(highlightStyle);
+                    }
+                },
+            });
+        };
+        var geo_json_cd42b1462a212252c2d29acf08cf7d5e = L.geoJson(null, {
+                onEachFeature: geo_json_cd42b1462a212252c2d29acf08cf7d5e_onEachFeature,
+            
+                style: geo_json_cd42b1462a212252c2d29acf08cf7d5e_styler,
+                pointToLayer: geo_json_cd42b1462a212252c2d29acf08cf7d5e_pointToLayer,
+        });
+
+        function geo_json_cd42b1462a212252c2d29acf08cf7d5e_add (data) {
+            geo_json_cd42b1462a212252c2d29acf08cf7d5e
+                .addData(data);
+        }
+            geo_json_cd42b1462a212252c2d29acf08cf7d5e_add({"bbox": [-1.627075, 53.7918315, -1.497842226246795, 53.83935115], "features": [{"bbox": [-1.6066842766615848, 53.82065695, -1.6066842766615848, 53.82065695], "geometry": {"coordinates": [-1.6066842766615848, 53.82065695], "type": "Point"}, "id": "0", "properties": {"Name": "England, Leeds, Kirkstall Abbey", "__folium_color": "green", "distance": 4446.155693758226, "id": 0}, "type": "Feature"}, {"bbox": [-1.627075, 53.8253007, -1.627075, 53.8253007], "geometry": {"coordinates": [-1.627075, 53.8253007], "type": "Point"}, "id": "1", "properties": {"Name": "England, Leeds, Kirkstall Forge", "__folium_color": "green", "distance": 5981.299607544937, "id": 1}, "type": "Feature"}, {"bbox": [-1.5185313611707953, 53.80814875, -1.5185313611707953, 53.80814875], "geometry": {"coordinates": [-1.5185313611707953, 53.80814875], "type": "Point"}, "id": "2", "properties": {"Name": "England, Leeds, Thackray Medical Museum", "__folium_color": "green", "distance": 2387.2695280932357, "id": 2}, "type": "Feature"}, {"bbox": [-1.599538669342672, 53.8093664, -1.599538669342672, 53.8093664], "geometry": {"coordinates": [-1.599538669342672, 53.8093664], "type": "Point"}, "id": "3", "properties": {"Name": "England, Leeds, Kirkstall Valley Nature Reserve", "__folium_color": "green", "distance": 3626.6206801771336, "id": 3}, "type": "Feature"}, {"bbox": [-1.5468954647604103, 53.8015726, -1.5468954647604103, 53.8015726], "geometry": {"coordinates": [-1.5468954647604103, 53.8015726], "type": "Point"}, "id": "4", "properties": {"Name": "England, Leeds, Leeds City Museum", "__folium_color": "green", "distance": 1025.66233938126, "id": 5}, "type": "Feature"}, {"bbox": [-1.5322629025902677, 53.7918315, -1.5322629025902677, 53.7918315], "geometry": {"coordinates": [-1.5322629025902677, 53.7918315], "type": "Point"}, "id": "5", "properties": {"Name": "England, Leeds, Royal Armouries Museum", "__folium_color": "green", "distance": 1274.3437443227301, "id": 7}, "type": "Feature"}, {"bbox": [-1.497842226246795, 53.83935115, -1.497842226246795, 53.83935115], "geometry": {"coordinates": [-1.497842226246795, 53.83935115], "type": "Point"}, "id": "6", "properties": {"Name": "England, Leeds, Roundhay Park", "__folium_color": "green", "distance": 4607.823521996076, "id": 9}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_cd42b1462a212252c2d29acf08cf7d5e.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["id", "Name", "distance"];
+    let aliases = ["id", "Name", "distance"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_cd42b1462a212252c2d29acf08cf7d5e.addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+        
+    
+            var tile_layer_b9cfd8542a0c97641e67c796bd1575ac = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            var layer_control_b5e23d6806aab7ce89f646bf5ff1f960_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_e778ed5f461438b9117360fc018844ba,
+                    "cartodbdarkmatter" : tile_layer_b9cfd8542a0c97641e67c796bd1575ac,
+                },
+                overlays :  {
+                    "LLM Data" : geo_json_beadba1485ab168626840db0e20291f6,
+                    "Distances" : geo_json_e253de2b6384da3e404f950966fd33e0,
+                    "Reference Points" : geo_json_cd42b1462a212252c2d29acf08cf7d5e,
+                },
+            };
+            let layer_control_b5e23d6806aab7ce89f646bf5ff1f960 = L.control.layers(
+                layer_control_b5e23d6806aab7ce89f646bf5ff1f960_layers.base_layers,
+                layer_control_b5e23d6806aab7ce89f646bf5ff1f960_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_313ce7c51d1cf7980a89fa5e7942ef34);
+
+        
+</script>
+</html>
